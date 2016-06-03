@@ -188,7 +188,10 @@ class Router extends React.Component{
         renderScene={this.renderScene.bind(this)}
         onDidFocus={this.onDidFocus.bind(this)}
         onWillFocus={this.onWillFocus.bind(this)}
-        configureScene={this.configureScene}
+        configureScene={(route) => ({
+              ...(route.sceneConfig || Navigator.SceneConfigs.FloatFromRight),
+              gestures: false
+              })}
       />
     );
   }
