@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react-native');
+var React = require('react');
 var {EventEmitter} = require('fbemitter');
 
 var NavBarContainer = require('./components/NavBarContainer');
@@ -11,7 +11,7 @@ var {
   StatusBarIOS,
   View,
   Platform
-} = React;
+} = require('react-native');
 
 class Router extends React.Component{
   constructor(props) {
