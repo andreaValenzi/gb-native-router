@@ -1,6 +1,6 @@
 'use strict';
 
-var React = require('react-native');
+var React = require('react');
 var NavButton = require('./NavButton');
 
 var {
@@ -9,7 +9,7 @@ var {
   View,
   Animated,
   Easing
-} = React;
+} = require('react-native');
 
 var NavBarContent = React.createClass({
 

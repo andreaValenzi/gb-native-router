@@ -1,13 +1,13 @@
 'use strict';
 
-var React = require('react-native');
+var React = require('react');
 
 var NavBarContent = require('./NavBarContent');
 
 var {
   StyleSheet,
   View
-} = React;
+} = require('react-native');
 
 var NavBarContainer = React.createClass({
 
